@@ -7,6 +7,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
+      loading: false,
       todos: todosData,
     }
     this.handleChange = this.handleChange.bind(this)
@@ -37,16 +38,3 @@ class App extends Component {
 }
 
 export default App;
-
-// const App = () => {
-
-//   const todoItems = todosData.map(item => <TodoItem key={item.id} item={item} />);
-
-//   return (
-//     <div className="todo-list">
-//       {todoItems}
-//     </div>
-//   );
-// }
-
-// export default App;
